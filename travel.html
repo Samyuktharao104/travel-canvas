@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in India</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card {
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .contact-form {
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Incredible India</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#destinations">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="#rooms">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login1.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="indiaCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#indiaCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#indiaCarousel" data-slide-to="1"></li>
+            <li data-target="#indiaCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/20/cb/f3/20cbf31ecf279ccab1a3264a2cec80c6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Explore India</h5>
+                    <p>Discover the diverse beauty of India.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperaccess.com/full/3172480.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cultural Heritage</h5>
+                    <p>Experience the rich cultural heritage of India.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/hd/travel-hd-axhrsecphqby11wk.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Natural Wonders</h5>
+                    <p>Explore the natural wonders across India.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#indiaCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#indiaCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Popular Destinations -->
+    <div class="container mt-5" id="destinations">
+        <h2 class="text-center mb-4">Popular Destinations in India</h2>
+        <div class="row">
+            <!-- Taj Mahal, Agra -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/mesmerizing-shot-famous-historic-taj-mahal-agra-india_181624-16028.jpg?t=st=1718380153~exp=1718383753~hmac=4dd03230cce604535805d62f9cc1bd9cebd7f57f4d581b82bb8043edf61ac8ca&w=1060" class="card-img-top" alt="Taj Mahal">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal, Agra</h5>
+                        <p class="card-text">The Taj Mahal, an epitome of love, is one of the most famous monuments in the world.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tajMahalModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Jaipur, Rajasthan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/low-angle-view-historic-hawa-mahal-against-sky_1048944-7570708.jpg?w=1060" class="card-img-top" alt="Jaipur">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaipur, Rajasthan</h5>
+                        <p class="card-text">Known as the Pink City, Jaipur is famous for its palaces and vibrant culture.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#jaipurModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kerala Backwaters -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/river-calm-scenery_1308-41414.jpg?t=st=1718380460~exp=1718384060~hmac=7e8b101ae1277a87b3fdf75b7ea097291b7f76ada33c4b505e4f75ac7175df6b&w=1060" class="card-img-top" alt="Kerala">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala Backwaters</h5>
+                        <p class="card-text">The tranquil backwaters of Kerala offer a unique and peaceful experience.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#keralaModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Bengaluru palace, Bengaluru   -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/ac/3a.jpg" class="card-img-top" alt="Bengaluru">
+                    <div class="card-body">
+                        <h5 class="card-title">Bengaluru palace, Bengaluru </h5>
+                        <p class="card-text">It is a great spot to take family photos or for children to just run around and have fun.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#BengaluruModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Charminar, Hyderabad -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/f4/ff/11/charminar.jpg" class="card-img-top" alt="Hyderabad">
+                    <div class="card-body">
+                        <h5 class="card-title">Charminar, Hyderabad</h5>
+                        <p class="card-text">Hyderabad is the capital and largest city of the Indian state of Telangana.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#HyderabadModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mumbai, Maharashtra -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Gateway-Of-India_600.jpg" class="card-img-top" alt="Maharashtra">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mumbai, Maharashtra</h5>
+                        <p class="card-text">Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#MaharashtraModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+	   <!-- Kedarnath, Utharkhand -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.telanganatoday.com/wp-content/uploads/2023/06/Kedarnath.jpg" class="card-img-top" alt="Kedarnath">
+                    <div class="card-body">
+                        <h5 class="card-title">Kedarnath, Utharkhand</h5>
+                        <p class="card-text">Kedarnath is a town and Nagar Panchayat in Rudraprayag known primarily for the Kedarnath Temple.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#KedarnathModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+	   <!-- Ooty, Tamilnadu -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.trawell.in/blog/wp-content/uploads/2024/03/ooty-main-730x410.jpg" class="card-img-top" alt="Ooty">
+                    <div class="card-body">
+                        <h5 class="card-title">Ooty, Tamilnadu</h5>
+                        <p class="card-text">Ooty is a resort town in the Western Ghats mountains, in southern India's Tamil Nadu state.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#OotyModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+	    <!-- Goa -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.cnbctv18.com/wp-content/uploads/2022/05/Goa-shutterstock-1000x573.jpg" class="card-img-top" alt="Goa">
+                    <div class="card-body">
+                        <h5 class="card-title">Goa</h5>
+                        <p class="card-text">Goa is a state on the southwestern coast of India, geographically separated from the Deccan highlands by the Western Ghats.</p> 
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#GoaModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destination Modals -->
+    <!-- Taj Mahal Modal -->
+    <div class="modal fade" id="tajMahalModal" tabindex="-1" aria-labelledby="tajMahalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tajMahalModalLabel">Taj Mahal, Agra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The Taj Mahal is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> The Taj Mahal itself, Agra Fort, Mehtab Bagh</li>
+                        <li><strong>Best Time to Visit:</strong> October to March</li>
+                        <li><strong>Local Cuisine:</strong> Mughlai cuisine including kebabs, biryani, and petha</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jaipur Modal -->
+    <div class="modal fade" id="jaipurModal" tabindex="-1" aria-labelledby="jaipurModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jaipurModalLabel">Jaipur, Rajasthan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Amber Fort, Hawa Mahal, City Palace</li>
+                        <li><strong>Best Time to Visit:</strong> October to March</li>
+                        <li><strong>Local Cuisine:</strong> Dal Baati Churma, Ghewar, and Laal Maas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kerala Modal -->
+    <div class="modal fade" id="keralaModal" tabindex="-1" aria-labelledby="keralaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="keralaModalLabel">Kerala Backwaters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The Kerala backwaters are a network of interconnected canals, rivers, lakes, and inlets, a labyrinthine system formed by more than 900 km of waterways. In the midst of this landscape there are a number of towns and cities, which serve as the starting and endpoints of backwater cruises.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Houseboat cruises, Alleppey, Kumarakom Bird Sanctuary</li>
+                        <li><strong>Best Time to Visit:</strong> November to February</li>
+                        <li><strong>Local Cuisine:</strong> Kerala Sadya, Appam with Stew, and Puttu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bengaluru Modal -->
+    <div class="modal fade" id="BengaluruModal" tabindex="-1" aria-labelledby="#BengaluruModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BengaluruModalLabel">Bengaluru palace, Bengaluru</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bangalore Palace is a 19th century royal palace located in Bangalore, Karnataka, India, in an area that was owned by the Rev. John Garrett, the first principal of the Central High School in Bangalore, now famous as Central College.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Lalbagh Botanical Garden, cubbon park, ISKCON Temple</li>
+                        <li><strong>Best Time to Visit:</strong> October to Feburary</li>
+                        <li><strong>Local Cuisine:</strong> Thatte Idli, Raggi mudde, Akki Roti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hyderabad Modal -->
+    <div class="modal fade" id="HyderabadModal" tabindex="-1" aria-labelledby="HyderabadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="HyderabaddModalLabel">Charminar, hyderabad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The fifth ruler of the Qutb Shahi dynasty, Muhammad Quli Qutb Shah, built the Charminar in 1591 after shifting his capital from Golconda to the newly formed city of Hyderabad.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Golconda Fort, salar jung museum, Ramoji filmcity</li>
+                        <li><strong>Best Time to Visit:</strong> November to February</li>
+                        <li><strong>Local Cuisine:</strong> Hyderabadi Biryani, Haleem, Irani Chai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Maharashtra Modal -->
+    <div class="modal fade" id="MaharashtraModal" tabindex="-1" aria-labelledby="#MaharashtraModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MaharashtraModalLabel">Mumbai, Maharashtra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The Gateway of India is an arch-monument completed in 1924 on the waterfront of Mumbai (Bombay), India. It was erected to commemorate the landing of George V for his coronation as the Emperor of India in December 1911 at Strand Road near Wellington Fountain.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Chhatrapati Shivaji Maharaj Terminus, Ellora Caves, Mahabaleshwar</li>
+                        <li><strong>Best Time to Visit:</strong> October to Feburary</li>
+                        <li><strong>Local Cuisine:</strong> Pav Bhaji, Vada Pav, Varan Bhat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kedarnath Modal -->
+    <div class="modal fade" id="KedarnathModal" tabindex="-1" aria-labelledby="KedarnathModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="KedarnathModalLabel">Kedarnath</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Kedarnath Temple is a Hindu temple, one of the twelve jyotirlinga of Shiva.The temple is located on the Garhwal Himalayan range.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Kedarnath Temple, Chorabar Tal, Sonprayag	</li>
+                        <li><strong>Best Time to Visit:</strong> April to June</li>
+                        <li><strong>Local Cuisine:</strong> Pahadi Rajma, Kafuli, Garhwali</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Ooty Modal -->
+    <div class="modal fade" id="OotyModal" tabindex="-1" aria-labelledby="OotyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="OotyModalLabel">ooty</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Officially called Ootacamund, the hill-town is better known by its nickname–Ooty. It is loved by Bollywood directors,families, and even backpackers, for its mountains, lakes, gardens, and waterfalls.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Doddabetta Peak, ooty hill station, Dolphin’s Nose</li>
+                        <li><strong>Best Time to Visit:</strong>  October to June</li>
+                        <li><strong>Local Cuisine:</strong> Neer Dosa ,hicken Chettinad,Kozhi Varutharachathu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goa Modal -->
+    <div class="modal fade" id="GoaModal" tabindex="-1" aria-labelledby="#GoaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="GoaModalLabel">Goa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The Gateway of India is an arch-monument completed in 1924 on the waterfront of Mumbai (Bombay), India. It was erected to commemorate the landing of George V for his coronation as the Emperor of India in December 1911 at Strand Road near Wellington Fountain.</p>
+                    <ul>
+                        <li><strong>Top Attractions:</strong> Baga beach, Dudhsagar Falls, palolem beach</li>
+                        <li><strong>Best Time to Visit:</strong> december to january</li>
+                        <li><strong>Local Cuisine:</strong> Alsanyache Tonak, Ambot Tik, Chicken Cafreal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Upcoming Events -->
+    <div class="container mt-5" id="events">
+        <h2 class="text-center mb-4">Upcoming Events in India</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/06/32/65/74/1000_F_632657405_l4aRAIYnMPropRdN1oW36ouQYShkjoXb.jpg" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Diwali Festival</h5>
+                        <p class="card-text">Celebrates the festival of lights with vibrant festivities across India.</p>
+                        <p><strong>Date:</strong> November 12, 2024</p>
+                        <p><strong>Location:</strong> Nationwide</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-vector/flat-carnival-youtube-channel-art_23-2149223280.jpg?t=st=1718380730~exp=1718384330~hmac=4a7ad4373fa8ef7bb484507170917bb4a266600fd48dc0c21cc8465d9a2101be&w=1060" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Goa Carnival</h5>
+                        <p class="card-text">Experience the vibrant culture and festivities of the Goa Carnival.</p>
+                        <p><strong>Date:</strong> February 10-13, 2025</p>
+                        <p><strong>Location:</strong> Goa</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/three-wise-men-riding-camels_23-2150972918.jpg?t=st=1718380817~exp=1718384417~hmac=90dc6c88f2ca3cba1beb1713549182fbdcecca3f191a7cad7f87516a3a1b6acf&w=1060" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pushkar Camel Fair</h5>
+                        <p class="card-text">A unique cultural experience with a vibrant display of Rajasthani culture.</p>
+                        <p><strong>Date:</strong> November 20-28, 2024</p>
+                        <p><strong>Location:</strong> Pushkar, Rajasthan</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+	    <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.herzindagi.info/image/2024/Mar/holi-significance.jpg" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Holi</h5>
+                        <p class="card-text">Holi is a Hindu spring festival celebrated in India on the full-moon day of Phalguna.</p>
+                        <p><strong>Date:</strong> March 25, 2024</p>
+                        <p><strong>Location:</strong> vrindavan, India</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://telugu.samayam.com/thumb/54623850/nine-9-days-of-dasara-festival-54623850.jpg?imgsize=206082&width=380&height=214&resizemode=75" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Dussehra</h5>
+                        <p class="card-text">Dussehra is a Hindu spring festival celebrated in India.</p>
+                        <p><strong>Date:</strong>October 12, 2024</p>
+                        <p><strong>Location:</strong> Nation Wide</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+	    <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.assettype.com/bloombergquint/2023-09/90ba2307-4303-4be9-9dcc-0f0b0dd7a785/shubham_bombarde_Jrjd8gdhVbc_unsplash.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Ganesh Chaturthi</h5>
+                        <p class="card-text">A unique cultural experience with a vibrant display of India culture.</p>
+                        <p><strong>Date:</strong> September 7, 2024</p>
+                        <p><strong>Location:</strong> india</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Rooms Section -->
+<section id="rooms" class="container">
+  <h2 class="text-center mb-4">Available Rooms</h2>
+  <div class="row">
+    <!-- Room Card Example -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/63302920.jpg?k=e7c2760e18638df1ed9a4f908edf8e5e4e0e9441e8d5b9e41b34023ccfd8e2e6&o=&hp=1" class="card-img-top" alt="Room 1">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Suite</h5>
+          <p class="card-text">Enjoy breathtaking views and luxurious amenities.</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/503277424.jpg?k=386aff8261ab525f00660594902a74b183a65e37ed065e6aeeefd25c05dd0e4b&o=&hp=1" class="card-img-top" alt="Room 2">
+        <div class="card-body">
+          <h5 class="card-title">Fab Hotels</h5>
+          <p class="card-text">Enjoy breathtaking views and luxurious amenities.</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+   <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/521582027.jpg?k=a1d07430a9ac3af8691b204f5945f513a0e992ad88b85735cbbeecad36b6a489&o=&hp=1" class="card-img-top" alt="Room 3">
+        <div class="card-body">
+          <h5 class="card-title">VS villas</h5>
+          <p class="card-text">Enjoy breathtaking views and luxurious villa views.</p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+ <div class="row">
+      <!-- Ticket options -->
+      <div class="col-md-6">
+        <div class="ticket">
+          <h3>Ticket Option 1</h3>
+          <p>Description of Ticket Option 1.</p>
+          <p>Price: $50</p>
+          <button class="btn btn-primary btn-block">Book Now</button>
+        </div>
+        <div class="ticket">
+          <h3>Ticket Option 2</h3>
+          <p>Description of Ticket Option 2.</p>
+          <p>Price: $75</p>
+          <button class="btn btn-primary btn-block">Book Now</button>
+        </div>
+        <div class="ticket">
+          <h3>Ticket Option 3</h3>
+          <p>Description of Ticket Option 3.</p>
+          <p>Price: $100</p>
+          <button class="btn btn-primary btn-block">Book Now</button>
+        </div>
+      </div>
+      <!-- Booking form -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Booking Details
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" class="form-control" id="tickets" placeholder="Enter number of tickets" required>
+              </div>
+              <div class="form-group">
+                <label for="ticketOption">Select Ticket Option:</label>
+                <select class="form-control" id="ticketOption" required>
+                  <option value="">Select...</option>
+                  <option value="option1">Ticket Option 1 - $50</option>
+                  <option value="option2">Ticket Option 2 - $75</option>
+                  <option value="option3">Ticket Option 3 - $100</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
+    <!-- Contact Us -->
+    <div class="container contact-form" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Incredible India. All rights reserved.</p>
+            <p>
+                <a href="#" class="text-white">Privacy Policy</a> | 
+                <a href="#" class="text-white">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
